@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 def solution(s):
     word = s
     ans = 0
@@ -14,12 +15,26 @@ def solution(s):
             else:
                 ans = 0
             break
+=======
+def solution(n, words):
+
+    for i in words:
+        print(i)
+>>>>>>> Stashed changes
 
         else:
             word = afterWord
     return ans
 
+<<<<<<< Updated upstream
 
 answer = solution(15)
 
 print(answer)
+=======
+ans = solution(
+    3, ["tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"]
+)
+
+print(ans)
+>>>>>>> Stashed changes
