@@ -1,6 +1,10 @@
 def solution(n, words):
+    wordsStack = [words[0]]
+    ans = []
 
-    return "hi"
+    for i in range(1, len(words)):
+        if wordsStack[-1][-1] != words[i]:
+            ans.append(i)
 
 
 ans = solution(
