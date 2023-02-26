@@ -1,15 +1,23 @@
-def solution(n, words):
-    wordsStack = [words[0]]
-    ans = []
+def solution(brown, yellow):
+    size = [0, 0]
 
-    for i in range(1, len(words)):
-        if wordsStack[-1][-1] != words[i]:
-            ans.append(i)
-    return "choco"
+    if yellow == 1:
+        size = [3, 3]
+
+    for i in range(1, yellow // 2 + 1):
+        if yellow // i == yellow / i:
+            w, h = yellow / i + 2, i + 2
+
+            if w * h - yellow == brown:
+                size = [int(w), int(h)]
+                break
+
+        else:
+            pass
+
+    return size
 
 
-ans = solution(
-    3, ["tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"]
-)
+ans = solution(8, 1)
 
 print(ans)
